@@ -17,9 +17,11 @@ def run_map():
     df = pd.read_csv('data/fine_dust.csv',encoding ='cp949' )
     dust = pd.read_csv('data/dust1.csv' ,encoding='utf-8')
     
-    fine = pd.concat([df,dust])
+    df['위도'] = dust['위도']
+    df['경도'] = dust['경도']
+    
 
-    st.dataframe(fine)
+    st.dataframe(df)
 
    # folium_static(folium.Map(location=[fine['위도'][0],fine['경도'][0]]))
 
