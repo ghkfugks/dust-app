@@ -1,5 +1,7 @@
 import streamlit as st
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 ############### 그래프에서 한국어 인식 ###############
 import platform
