@@ -6,13 +6,14 @@ import seaborn as sb
 import json
 import glob
 import folium
+from streamlit_folium import folium_static
 
 def run_map():
     pass
 # from msilib.schema import Icon
 
 
-# from streamlit_folium import folium_static
+# 
 
 
 
