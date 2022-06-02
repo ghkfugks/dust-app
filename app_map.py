@@ -20,6 +20,7 @@ def run_map():
     df['위도'] = dust['위도']
     df['경도'] = dust['경도']
     
+    
 
     st.dataframe(df)
 
