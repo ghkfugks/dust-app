@@ -1,3 +1,4 @@
+
 from matplotlib import pyplot as plt
 from nbformat import write
 import streamlit as st
@@ -8,13 +9,19 @@ import glob
 import folium
 from streamlit_folium import folium_static
 from msilib.schema import Icon
-
+import folium
 
 def run_map():
     st.subheader('지역별 미세먼지 시간별 현황')
 
-    df = pd.read_csv('data/fine_dust.csv')
-    dust = pd.read_csv('data/dust.csv')
+    df = pd.read_csv('data/fine_dust.csv',encoding ='cp949' )
+    dust = pd.read_csv('data/dust1.csv' ,encoding='utf-8')
+    
+    fine = pd.concat([df,dust])
+
+    st.dataframe(fine)
+
+   # folium_static(folium.Map(location=[fine['위도'][0],fine['경도'][0]]))
 
     
 
