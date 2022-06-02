@@ -7,31 +7,18 @@ import json
 import glob
 import folium
 from streamlit_folium import folium_static
+from msilib.schema import Icon
+
 
 def run_map():
-    pass
-# from msilib.schema import Icon
+    st.subheader('지역별 미세먼지 시간별 현황')
 
+    df = pd.read_csv('data/fine_dust.csv')
+    dust = pd.read_csv('data/dust.csv')
 
-# 
-
-
-
-# def run_eda():
-#     st.subheader('카페 위치 분석')
-
-#     coffee_df1 = pd.read_csv('data/cafe_map1.csv',index_col=0)
-#     coffee_df2 = pd.read_csv('data/cafe_map2.csv',index_col=0)
-#     coffee_df3 = pd.read_csv('data/cafe_map3.csv',index_col=0)
+    
 
 #     coffee_df = pd.concat([coffee_df1,coffee_df2,coffee_df3])
-
-
-#     geo_path = 'data/02. skorea_municipalities_geo_simple.1.json'
-#     geo_str = json.load(open(geo_path, encoding='utf-8'))
-
-    
-    
 
 
 #     cafe = ['데이터프레임','인천시','경기도','서울시','브랜드별 수도권 위치','인접한 카페 위치']
