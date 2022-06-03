@@ -19,10 +19,28 @@ def run_map():
     
     df['위도'] = dust['위도']
     df['경도'] = dust['경도']
+
+    df['연월일'] =  df['연월일'].astype('datetime64')
+
     
+    
+    # choice = st.sidebar.date_input('날짜 선택', df['연월일'])
+    # serch_type = sorted(list(df['시간'].unique()))
+    # serch_type_df = st.sidebar.selectbox('시간 선택',serch_type)
+    # asd = st.sidebar.date_input('날짜선택')
+    # st.write(asd)
+    # st.dataframe(df.loc[df['연월일'] == asd])
+    #     # st.dataframe(df.loc[df['연월일']])
+        
+        
+
+    my_date = st.date_input('날짜')
+    st.dataframe(df.loc[df['연월일'] == my_date])
     
 
-    st.dataframe(df)
+
+    
+        
 
    # folium_static(folium.Map(location=[fine['위도'][0],fine['경도'][0]]))
 
