@@ -18,7 +18,7 @@ def run_data():
 
 
     radio_menu1 = ['최대','최소']
-    selected1 = st.radio('선택하세요',radio_menu1)
+    selected1 = st.radio('대기량 미세먼지',radio_menu1)
 
     if selected1 == radio_menu1[0] :
         st.dataframe(df[['미세먼지','초미세먼지']].max())

@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from PIL import Image
 
 ############### 그래프에서 한국어 인식 ###############
 import platform
@@ -22,4 +23,9 @@ else:
 
 
 def run_chart():
-    pass
+    df = pd.read_csv('data/fine_dust.csv',encoding ='cp949' )
+
+    
+
+
+
