@@ -10,10 +10,10 @@
  
  
  ### 사용언어
- - `Python;`   
+ - `Python`   
 
  ### library
- `pip install streamlit-option-menu ;`
+ `pip install streamlit-option-menu `
 
  
  
