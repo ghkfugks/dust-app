@@ -1,19 +1,7 @@
-
-import imp
-from locale import atoi
-from secrets import choice
-from sqlite3 import Timestamp
-from matplotlib import pyplot as plt
-from nbformat import write
 import streamlit as st
 import pandas as pd
-import seaborn as sb
-import numpy as np
-import json
-import glob
 import folium
 from streamlit_folium import folium_static
-from msilib.schema import Icon
 import folium
 from PIL import Image
 
