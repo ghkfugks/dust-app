@@ -1,5 +1,4 @@
 import streamlit as st
-from app_chart import run_chart
 from app_data import run_data
 
 from app_home import run_home
@@ -13,7 +12,7 @@ from streamlit_option_menu import option_menu
 def main():
     st.title('서대문구 미세먼지')
 
-    menu = ['Home','Data','Chart','MAP','ML']
+    menu = ['Home','Data','MAP','ML']
 
     with st.sidebar:
     
@@ -32,10 +31,8 @@ def main():
     elif choose == menu[1] :
         run_data()
     elif choose == menu[2]:
-        run_chart()
-    elif choose == menu[3]:
         run_map()
-    elif choose == menu[4]:
+    elif choose == menu[3]:
         run_ml()
 
 
