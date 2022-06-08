@@ -13,7 +13,10 @@
  - `Python`   
 
  ### library
+ 
  `pip install streamlit-option-menu `
+ 
+ `pip install folium `
 
  
  
