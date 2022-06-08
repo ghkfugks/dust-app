@@ -13,7 +13,7 @@
  - `Python;`   
 
  ### library
- 
+ `pip install streamlit-option-menu ;`
 
  
  
