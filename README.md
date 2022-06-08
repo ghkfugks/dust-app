@@ -10,7 +10,7 @@
  
  
  ### 사용언어
- - 'Python:'
+ - `Python;`   
 
  ### library
  
